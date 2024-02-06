@@ -14,6 +14,6 @@ cases = [
 ]
 
 for case in cases:
-    assert str(test_module.run(case[0])) == case[1]
+    assert str(int(test_module.run(case[0]))) == case[1]
 
 print("OK")
