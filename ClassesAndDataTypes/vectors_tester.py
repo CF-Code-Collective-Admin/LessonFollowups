@@ -9,6 +9,8 @@ cases = [
     [(13, 9, 5), (6, 15, 8), [(19, 24, 13), (7, -6, -3), 253, (-3, -74, 141)]],
 ]
 
+test_module.run()
+
 def test(case):
     vector_a = test_module.vector3(*case[0])
     vector_b = test_module.vector3(*case[1])

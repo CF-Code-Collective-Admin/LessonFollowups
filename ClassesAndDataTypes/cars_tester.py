@@ -10,6 +10,8 @@ cases = [
     [2024, "Nissan", "Rogue"]
 ]
 
+test_module.run()
+
 def test(year, make, model):
     car = test_module.car(year, make, model)
     a, b, c = car.info()
