@@ -31,6 +31,6 @@ def test(case):
     return True
 
 for case in cases:
-    assert test(test_module.run(case))
+    assert test(case)
 
 print("OK")
