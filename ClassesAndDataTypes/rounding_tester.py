@@ -1,6 +1,6 @@
-# Describe test case
+# Rounds a number to the nearest int
 
-import MODULE as test_module
+import rounding as test_module
 
 cases = [
     [124.47, "124"],

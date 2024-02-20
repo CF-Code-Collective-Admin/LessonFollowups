@@ -1,6 +1,6 @@
 # Creates a car() instance and tests it
 
-import MODULE as test_module
+import cars as test_module
 
 cases = [
     [2014, "Kia", "Sportage"],

@@ -1,6 +1,6 @@
-# Describe test case
+# Generates 50 unique random numbers
 
-import MODULE as test_module
+import unique as test_module
 
 def test(inp):
     inp = set(inp)

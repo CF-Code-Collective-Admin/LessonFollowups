@@ -1,6 +1,6 @@
-# Describe test case
+# Generates two vector3's and runs four basic operations
 
-import MODULE as test_module
+import vectors as test_module
 
 cases = [
     [(5, 7, 4), (2, 4, 8), [(7, 11, 12), (3, 3, -4), 70, (40, -32, 6)]],

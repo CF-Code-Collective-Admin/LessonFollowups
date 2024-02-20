@@ -1,6 +1,6 @@
-# Describe test case
+# Given a name, should return the debt
 
-import MODULE as test_module
+import registry as test_module
 
 cases = [
     ["Emanuel", "123"],
