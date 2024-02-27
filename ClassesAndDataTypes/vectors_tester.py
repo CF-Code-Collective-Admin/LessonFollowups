@@ -1,6 +1,7 @@
 # Generates two vector3's and runs four basic operations
 
 import vectors as test_module
+from vectors import Vector3
 
 cases = [
     [(5.0, 7.0, 4.0), (2.0, 4.0, 8.0), [(7.0, 11.0, 12.0), (3.0, 3.0, -4.0), 70.0, (40.0, -32.0, 6.0)]],
@@ -15,8 +16,8 @@ except:
     pass
 
 def test(case):
-    vector_a = test_module.Vector3(*case[0])
-    vector_b = test_module.Vector3(*case[1])
+    vector_a = Vector3(*case[0])
+    vector_b = Vector3(*case[1])
     
     add = Vector3.add(vector_a, vector_b)
     sub = Vector3.subtract(vector_a, vector_b)
@@ -24,12 +25,20 @@ def test(case):
     cross = Vector3.cross(vector_a, vector_b)
     
     if str(add) != str(case[2][0]):
+        print(f"Expected (add): {case[2][0]}")
+        print(f"Actual: {add}")
         return False
     if str(sub) != str(case[2][1]):
+        print(f"Expected (sub): {case[2][1]}")
+        print(f"Actual: {subtract}")
         return False
     if str(dot) != str(float(case[2][2])):
+        print(f"Expected (dot): {case[2][2]}")
+        print(f"Actual: {dot}")
         return False
     if str(cross) != str(case[2][3]):
+        print(f"Expected (cross): {case[2][3]}")
+        print(f"Actual: {cross}")
         return False
     return True
 
